@@ -1,32 +1,26 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-kachuwa-dev-192225-authRole",
-            "UnauthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-authRole",
-            "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
-            "UnauthRoleName": "amplify-kachuwa-dev-192225-unauthRole",
-            "StackName": "amplify-kachuwa-dev-192225",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:736086997297:stack/amplify-kachuwa-dev-192225/233c84e0-e24d-11eb-be7e-06e612b9775e",
-            "AmplifyAppId": "d3v6pm6eye0w2a"
-        },
-        "categories": {
-            "auth": {
-                "kachuwaa24e1548": {}
-            },
-            "function": {
-                "S3Trigger4235dc3b": {
-                    "deploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
-                    "s3Key": "amplify-builds/S3Trigger4235dc3b-77667a33684276483667-build.zip"
-                }
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d3v6pm6eye0w2a",
-                    "type": "cicd"
-                }
-            }
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kachuwa-dev-192225-authRole",
+      "UnauthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
+      "UnauthRoleName": "amplify-kachuwa-dev-192225-unauthRole",
+      "StackName": "amplify-kachuwa-dev-192225",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:736086997297:stack/amplify-kachuwa-dev-192225/233c84e0-e24d-11eb-be7e-06e612b9775e",
+      "AmplifyAppId": "d3v6pm6eye0w2a"
+    },
+    "categories": {
+      "auth": {
+        "kachuwaa24e1548": {}
+      },
+      "function": {
+        "S3Trigger4235dc3b": {
+          "deploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
+          "s3Key": "amplify-builds/S3Trigger4235dc3b-764e7737623452433557-build.zip"
         }
+      }
     }
+  }
 }

@@ -1,126 +1,120 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-kachuwa-dev-192225-authRole",
-            "UnauthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-authRole",
-            "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
-            "UnauthRoleName": "amplify-kachuwa-dev-192225-unauthRole",
-            "StackName": "amplify-kachuwa-dev-192225",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:736086997297:stack/amplify-kachuwa-dev-192225/233c84e0-e24d-11eb-be7e-06e612b9775e",
-            "AmplifyAppId": "d3v6pm6eye0w2a",
-            "AuthTriggerTemplateURL": ""
-        }
-    },
-    "api": {
-        "kachuwa": {
-            "service": "AppSync",
-            "providerPlugin": "awscloudformation",
-            "output": {
-                "authConfig": {
-                    "defaultAuthentication": {
-                        "authenticationType": "API_KEY",
-                        "apiKeyConfig": {
-                            "apiKeyExpirationDays": 365,
-                            "description": "kachuwaKey"
-                        }
-                    },
-                    "additionalAuthenticationProviders": []
-                },
-                "GraphQLAPIIdOutput": "cqy5drdwpbeiznxgetsyr6c5iu",
-                "GraphQLAPIEndpointOutput": "https://2rbubvupsncjba6cbogz42jegq.appsync-api.ap-southeast-1.amazonaws.com/graphql",
-                "GraphQLAPIKeyOutput": "da2-4mhfwl7nbzf75gwnagq76uvme4"
-            },
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-                "logicalId": "apikachuwa"
-            },
-            "lastPushTimeStamp": "2021-07-12T13:49:37.195Z",
-            "lastPushDirHash": "jlrPZU1JwXTWcquhLf8jm3JEIVc="
-        }
-    },
-    "auth": {
-        "kachuwaa24e1548": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": [],
-            "customAuth": false,
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/auth/kachuwaa24e1548-cloudformation-template.yml",
-                "logicalId": "authkachuwaa24e1548"
-            },
-            "lastPushTimeStamp": "2021-07-12T13:49:37.198Z",
-            "output": {
-                "UserPoolId": "ap-southeast-1_kh0qNqAsG",
-                "AppClientIDWeb": "5o21bko88366a535i3l1hs7sj",
-                "AppClientID": "7sk3rv5b9ianh831hqs89trm4g",
-                "IdentityPoolId": "ap-southeast-1:65cc705b-6b83-439d-801d-f9881639b429",
-                "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-1:736086997297:userpool/ap-southeast-1_kh0qNqAsG",
-                "IdentityPoolName": "kachuwaa24e1548_identitypool_a24e1548__dev",
-                "UserPoolName": "kachuwaa24e1548_userpool_a24e1548"
-            },
-            "lastPushDirHash": "VwlKHWN7Tx/hGQwpmUT3rk+CaiQ="
-        }
-    },
-    "function": {
-        "S3Trigger4235dc3b": {
-            "service": "Lambda",
-            "providerPlugin": "awscloudformation",
-            "build": true,
-            "lastBuildTimeStamp": "2021-07-12T13:48:30.090Z",
-            "lastPackageTimeStamp": "2021-07-12T13:48:30.294Z",
-            "distZipFilename": "S3Trigger4235dc3b-77667a33684276483667-build.zip",
-            "s3Bucket": {
-                "deploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
-                "s3Key": "amplify-builds/S3Trigger4235dc3b-77667a33684276483667-build.zip"
-            },
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/function/S3Trigger4235dc3b-cloudformation-template.json",
-                "logicalId": "functionS3Trigger4235dc3b"
-            },
-            "lastPushTimeStamp": "2021-07-12T13:49:37.230Z",
-            "output": {
-                "Region": "ap-southeast-1",
-                "Arn": "arn:aws:lambda:ap-southeast-1:736086997297:function:S3Trigger4235dc3b-dev",
-                "Name": "S3Trigger4235dc3b-dev",
-                "LambdaExecutionRole": "S3Trigger4235dc3bLambdaRole4235dc3b-dev"
-            },
-            "lastPushDirHash": "ZSVyQAshmBxs+oaFPxOSH2RB5Fw="
-        }
-    },
-    "storage": {
-        "imageSearch": {
-            "service": "S3",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": [
-                {
-                    "category": "function",
-                    "resourceName": "S3Trigger4235dc3b",
-                    "attributes": [
-                        "Name",
-                        "Arn",
-                        "LambdaExecutionRole"
-                    ]
-                }
-            ],
-            "providerMetadata": {
-                "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
-                "logicalId": "storageimageSearch"
-            },
-            "lastPushTimeStamp": "2021-07-12T13:49:37.220Z",
-            "output": {
-                "BucketName": "kachuwa-image192225-dev",
-                "Region": "ap-southeast-1"
-            },
-            "lastPushDirHash": "NVihfVRd+HAUb0ThEAEGuK43YQo="
-        }
-    },
-    "hosting": {
-        "amplifyhosting": {
-            "service": "amplifyhosting",
-            "type": "cicd",
-            "lastPushTimeStamp": "2021-07-12T15:24:30.976Z"
-        }
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kachuwa-dev-192225-authRole",
+      "UnauthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::736086997297:role/amplify-kachuwa-dev-192225-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
+      "UnauthRoleName": "amplify-kachuwa-dev-192225-unauthRole",
+      "StackName": "amplify-kachuwa-dev-192225",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:736086997297:stack/amplify-kachuwa-dev-192225/233c84e0-e24d-11eb-be7e-06e612b9775e",
+      "AmplifyAppId": "d3v6pm6eye0w2a",
+      "AuthTriggerTemplateURL": ""
     }
+  },
+  "api": {
+    "kachuwa": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "kachuwaKey"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "cqy5drdwpbeiznxgetsyr6c5iu",
+        "GraphQLAPIEndpointOutput": "https://2rbubvupsncjba6cbogz42jegq.appsync-api.ap-southeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-4mhfwl7nbzf75gwnagq76uvme4"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apikachuwa"
+      },
+      "lastPushTimeStamp": "2021-07-12T16:06:28.395Z",
+      "lastPushDirHash": "jlrPZU1JwXTWcquhLf8jm3JEIVc="
+    }
+  },
+  "auth": {
+    "kachuwaa24e1548": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/auth/kachuwaa24e1548-cloudformation-template.yml",
+        "logicalId": "authkachuwaa24e1548"
+      },
+      "lastPushTimeStamp": "2021-07-12T16:06:28.396Z",
+      "output": {
+        "UserPoolId": "ap-southeast-1_kh0qNqAsG",
+        "AppClientIDWeb": "5o21bko88366a535i3l1hs7sj",
+        "AppClientID": "7sk3rv5b9ianh831hqs89trm4g",
+        "IdentityPoolId": "ap-southeast-1:65cc705b-6b83-439d-801d-f9881639b429",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-1:736086997297:userpool/ap-southeast-1_kh0qNqAsG",
+        "IdentityPoolName": "kachuwaa24e1548_identitypool_a24e1548__dev",
+        "UserPoolName": "kachuwaa24e1548_userpool_a24e1548"
+      },
+      "lastPushDirHash": "VwlKHWN7Tx/hGQwpmUT3rk+CaiQ="
+    }
+  },
+  "function": {
+    "S3Trigger4235dc3b": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastBuildTimeStamp": "2021-07-12T16:05:20.360Z",
+      "lastPackageTimeStamp": "2021-07-12T16:05:20.497Z",
+      "distZipFilename": "S3Trigger4235dc3b-764e7737623452433557-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-kachuwa-dev-192225-deployment",
+        "s3Key": "amplify-builds/S3Trigger4235dc3b-764e7737623452433557-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/function/S3Trigger4235dc3b-cloudformation-template.json",
+        "logicalId": "functionS3Trigger4235dc3b"
+      },
+      "lastPushTimeStamp": "2021-07-12T16:06:28.427Z",
+      "output": {
+        "Region": "ap-southeast-1",
+        "Arn": "arn:aws:lambda:ap-southeast-1:736086997297:function:S3Trigger4235dc3b-dev",
+        "Name": "S3Trigger4235dc3b-dev",
+        "LambdaExecutionRole": "S3Trigger4235dc3bLambdaRole4235dc3b-dev"
+      },
+      "lastPushDirHash": "sjoypN159cKg+iLDMkvoUrKWthQ="
+    }
+  },
+  "storage": {
+    "imageSearch": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger4235dc3b",
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kachuwa-dev-192225-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageimageSearch"
+      },
+      "lastPushTimeStamp": "2021-07-12T16:06:28.417Z",
+      "output": {
+        "BucketName": "kachuwa-image192225-dev",
+        "Region": "ap-southeast-1"
+      },
+      "lastPushDirHash": "NVihfVRd+HAUb0ThEAEGuK43YQo="
+    }
+  },
+  "hosting": {}
 }

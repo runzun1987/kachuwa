@@ -13,5 +13,5 @@ exports.handler = async function(event) {
   const imgUrl = `https://${bucket}.s3.${awsRegion}.amazonaws.com/${key}`;
   const customUrl = `https://api-gw.onebound.cn/taobao/upload_img/?key=${API_KEY}&&imgcode=${imgUrl}&&lang=en&secret=${SECRET}`;
   const response = await axios.get(customUrl);
-  console.log(response, 'succcccccssssssssssssssssssssssssssssssssss');
+  /******** I want this response back to react**************/
 };
