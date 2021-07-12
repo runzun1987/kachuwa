@@ -1,0 +1,133 @@
+.top {
+  border: 5px solid red;
+  float:left;
+  height: 400px;
+  width:400px; 
+  padding:3px; 
+
+  background:rgb(64, 72, 187);
+}
+
+.middle {
+    border: 5px solid red;
+    float:left;
+    height: 400px;
+    width:1000px; 
+    padding:3px; 
+  
+    /* background:rgb(64, 72, 187); */
+  }
+
+.top-keyword h3{
+    color:white;
+}
+.top-keyword label{
+    color:white;
+}
+
+.top-keyword button{
+    color:white;
+}
+
+.button {
+    border: 5px solid red;
+    float:left;
+    height: 400px;
+    width:400px; 
+    padding:3px; 
+  
+    background:rgb(64, 72, 187);
+}
+
+.button form{
+    border: 2px solid red;
+    margin-top: 50px;
+    margin:10px;
+}
+.button h2{
+    color:white;
+}
+
+.button p{
+    color:white;
+}
+.button label{
+    color:white;
+}
+
+.button button{
+    color:white;
+}
+
+
+
+.keyword-list {
+  height: 200px;
+  overflow: auto;
+  background: #fff;
+}
+
+.kachuwa-products {
+    border: 2px solid blue;
+  }
+  
+  .kachuwa-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .kachuwa-td,
+  .kachuwa-th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .kachuwa-tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  .kachuwa-products {
+    border: 2px solid red;
+    margin: 5px;
+  }
+  .date-status {
+    background-color: rgb(73, 161, 135);
+    overflow: hidden;
+  }
+  
+  .kachuwa-products .date {
+    color: white;
+  
+    margin: 4px;
+    float: left;
+  }
+  
+  .kachuwa-products .total {
+    background-color: rgb(73, 161, 135);
+    color: white;
+    border: 2px solid black;
+    margin: 0px;
+    text-align: right;
+  }
+  
+  .dashboard .tab-pane p {
+    margin-bottom: 0rem;
+  }
+  
+  .kachuwa-products .status {
+    overflow: hidden;
+    color: white;
+    
+    margin: 4px;
+    float: right;
+  }
+
+  .kachuwa-info{
+    background-color:yellow;
+    color: red;
+    font-weight: bold;
+
+  }
+  

@@ -1,0 +1,386 @@
+{
+  "team_members": [
+    {
+      "img": "assets/images/team/about-2/member-1.jpg",
+      "name": "Samanta Grey",
+      "title": "Founder & CEO"
+    },
+    {
+      "img": "assets/images/team/about-2/member-2.jpg",
+      "name": "Bruce Sutton",
+      "title": "Sales & Marketing Manager"
+    },
+    {
+      "img": "assets/images/team/about-2/member-3.jpg",
+      "name": "Jat Joy",
+      "title": "Product Manager"
+    },
+    {
+      "img": "assets/images/team/about-2/member-4.jpg",
+      "name": "Mark Pocket",
+      "title": "Product Manager"
+    },
+    {
+      "img": "assets/images/team/about-2/member-5.jpg",
+      "name": "Damion Blue",
+      "title": "Sales & Marketing Manager"
+    },
+    {
+      "img": "assets/images/team/about-2/member-6.jpg",
+      "name": "Lenard Smith",
+      "title": "Product Manager"
+    },
+    {
+      "img": "assets/images/team/about-2/member-7.jpg",
+      "name": "Rachel Green",
+      "title": "Product Manager"
+    },
+    {
+      "img": "assets/images/team/about-2/member-8.jpg",
+      "name": "David Doe",
+      "title": "Product Manager"
+    }
+  ],
+  "brands": {
+    "default": [
+      {
+        "name": "brand",
+        "image": "assets/images/brands/1.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/2.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/3.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/4.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/5.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/6.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/7.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/8.png"
+      },
+      {
+        "name": "brand",
+        "image": "assets/images/brands/9.png"
+      }
+    ]
+  },
+  "shop_categories": [
+    {
+      "id": 1,
+      "name": "Furniture"
+    },
+    {
+      "id": 2,
+      "name": "Coffee & Tables"
+    },
+    {
+      "id": 3,
+      "name": "Lighting"
+    },
+    {
+      "id": 4,
+      "name": "Decoration"
+    },
+    {
+      "id": 5,
+      "name": "Electronics"
+    },
+    {
+      "id": 6,
+      "name": "Beds"
+    },
+    {
+      "id": 7,
+      "name": "Armchairs & Chaises"
+    },
+    {
+      "id": 8,
+      "name": "Sofas & Sleeper Sofas"
+    }
+  ],
+  "elementsUrl": [
+    {
+      "url": "/elements/accordions",
+      "name": "accordions",
+      "class": "img-accordions"
+    },
+    {
+      "url": "/elements/banners",
+      "name": "banners",
+      "class": "img-banners"
+    },
+    {
+      "url": "/elements/blog-posts",
+      "name": "blog posts",
+      "class": "img-blog-posts"
+    },
+    {
+      "url": "/elements/buttons",
+      "name": "buttons",
+      "class": "img-buttons"
+    },
+    {
+      "url": "/elements/cta",
+      "name": "call to action",
+      "class": "img-cta"
+    },
+    {
+      "url": "/elements/icon-boxes",
+      "name": "icon boxes",
+      "class": "img-icon-boxes"
+    },
+    {
+      "url": "/elements/portfolios",
+      "name": "portfolio",
+      "class": "img-portfolio"
+    },
+    {
+      "url": "/elements/categories",
+      "name": "product catigories",
+      "class": "img-product-categories"
+    },
+    {
+      "url": "/elements/products",
+      "name": "products",
+      "class": "img-products"
+    },
+    {
+      "url": "/elements/tabs",
+      "name": "tabs",
+      "class": "img-tabs"
+    },
+    {
+      "url": "/elements/testimonials",
+      "name": "testimonials",
+      "class": "img-testimonials"
+    },
+    {
+      "url": "/elements/titles",
+      "name": "titles",
+      "class": "img-titles"
+    },
+    {
+      "url": "/elements/typography",
+      "name": "typography",
+      "class": "img-typography"
+    },
+    {
+      "url": "/elements/video-banners",
+      "name": "video",
+      "class": "img-video"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "icon": "icon-rocket",
+      "title": "Free Shipping",
+      "subtitle": "Orders Rs.500 or more"
+    },
+    {
+      "id": 2,
+      "icon": "icon-rotate-left",
+      "title": "Free Returns",
+      "subtitle": "Within 7 days"
+    },
+    {
+      "id": 3,
+      "icon": "icon-info-circle",
+      "title": "Delivery in",
+      "subtitle": "10-15 days*"
+    },
+    {
+      "id": 4,
+      "icon": "icon-life-ring",
+      "title": "We Support",
+      "subtitle": "24/7 amazing services"
+    }
+  ],
+  "innerOverlayPaths": [
+    "shop/sidebar",
+    "product/default",
+    "product/centered",
+    "product/extended",
+    "product/gallery",
+    "product/sticky",
+    "product/sidebar",
+    "product/fullwidth",
+    "product/masonry"
+  ],
+  "introBanners": [
+    {
+      "image": "assets/images/home/sliders/slide-1.jpg",
+      "srcSet": "https://kachuwa.web.app/assets/images/home/sliders/slide-1-480w.jpg",
+      "subtitle": "",
+      "title": "International products<br/>Now in Nepal.",
+      "text": "Deliver to your doorstep",
+      "btnText": "Discover Now"
+    },
+    {
+      "image": "assets/images/home/sliders/slide-2.jpg",
+      "srcSet": "https://kachuwa.web.app/assets/images/home/sliders/slide-2-480w.jpg",
+      "subtitle": "",
+      "title": "<span>Delivery in all</span> <br/>major Cities",
+      "price": "<span>Of Nepal.</span>",
+      "btnText": "Discover Here"
+    },
+    {
+      "image": "assets/images/home/sliders/slide-3.jpg",
+      "srcSet": "https://kachuwa.web.app/assets/images/home/sliders/slide-3-480w.jpg",
+      "subtitle": "",
+      "title": "Over a Billion <br/>Products",
+      "text": "Buy anything you want",
+      "btnText": "Discover Now"
+    }
+  ],
+  "banners": [
+    {
+      "image": "assets/images/home/banners/banner-2.jpg",
+      "title": "Shein Fashion <br/>For Summer <br/><span>Starting Rs.500</span>",
+      "subtitle": "Hottest Deals",
+      "height": 240
+    },
+    {
+      "image": "assets/images/home/banners/banner-3.png",
+      "title": "Forever 21 <br/><span>Up To 30% Off</span>",
+      "subtitle": "Deal of the Day",
+      "height": 240
+    },
+    {
+      "image": "assets/images/home/banners/banner-4.jpg",
+      "title": "Trendy Cool Cases",
+      "subtitle": "All new",
+      "height": 240
+    },
+    {
+      "image": "assets/images/home/banners/banner-7.jpg",
+      "title": "Are you ready for  <br/><span>Swimming pool Floaters?</span>",
+      "subtitle": "Summer Pick 2021",
+      "height": 160
+    },
+    {
+      "image": "assets/images/home/banners/banner-8.jpg",
+      "title": "Minimalist<br/><span>Home Decor for you home!</span>",
+      "subtitle": "Amazing Value",
+      "height": 160
+    },
+    {
+      "contentAdClass": "banner-content-top banner-content-right text-right",
+      "image": "assets/images/home/banners/banner-11.jpg",
+      "title": "Cute Plush <span>Toys</span>",
+      "height": 390
+    },
+    {
+      "contentAdClass": "banner-content-top",
+      "image": "assets/images/home/banners/banner-12.jpg",
+      "title": "Take Better Photos <br/><span>With</span> Canon EOS <br/><span>Up To 20% Off</span>",
+      "height": 400
+    },
+    {
+      "adClass": "banner-content-stretch",
+      "contentAdClass": "text-right",
+      "image": "assets/images/home/banners/banner-1.png",
+      "price": "<sup class='text-white'><strong>Ukulele</strong> from&nbsp;</sup><span class='text-white'><strong>Rs.990</strong><sup class='text-white'></sup></span>",
+      "btnText": "Discover Now ",
+      "height": 490
+    }
+  ],
+  "categoryBanners": [
+    {
+      "categories": [
+        "Electronics",
+        [
+          "Cell Phones",
+          "Computers",
+          "TV & Video",
+          "Smart Home",
+          "Audi",
+          "Home Audio & Theater"
+        ]
+      ],
+      "background": "assets/images/home/banners/banner-bg-1.jpg",
+      "image": "assets/images/home/banners/banner-5.jpg",
+      "title": "Canon EOS <br/>Mega Sale <br/><span>Up To 20% Off</span>",
+      "subtitle": "Best Deals",
+      "height": 390
+    },
+    {
+      "categories": [
+        "Furniture",
+        [
+          "Bedroom",
+          "Office",
+          "Living Room",
+          "Kitchen & Dining",
+          "Decoration",
+          "Outdoor"
+        ]
+      ],
+      "background": "assets/images/home/banners/banner-bg-2.jpg",
+      "image": "assets/images/home/banners/banner-6.jpg",
+      "title": "Furniture Sets <br/><span>Up To 30% Off</span>",
+      "subtitle": "Best Deals",
+      "height": 390
+    },
+    {
+      "categories": [
+        "Clothing",
+        [
+          "Best Sellers",
+          "Trending",
+          "Women",
+          "Man",
+          "Shoes",
+          "Accessories"
+        ]
+      ],
+      "background": "assets/images/home/banners/banner-bg-3.jpg",
+      "image": "assets/images/home/banners/banner-9.jpg",
+      "title": "Clearance <br/>Outerwear<br/><span>Up To 70% Off</span>",
+      "subtitle": "Best Deals",
+      "height": 400
+    },
+    {
+      "categories": [
+        "Cooking",
+        [
+          "Cookware",
+          "Dinnerware",
+          "Cups",
+          "Microwaves",
+          "Toasters",
+          "Coffee Makers"
+        ]
+      ],
+      "background": "assets/images/home/banners/banner-bg-4.jpg",
+      "image": "assets/images/home/banners/banner-10.jpg",
+      "title": "Cooking <br/>Appliances <br/><span>Up To 30% Off</span>",
+      "subtitle": "Best Deals",
+      "height": 400
+    }
+  ],
+  "trendyCategories": [
+    "All",
+    "Clothing",
+    "Cooking",
+    "Electronics",
+    "Furniture"
+  ]
+}

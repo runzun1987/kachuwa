@@ -1,0 +1,123 @@
+.images {
+  border: 2px red solid;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.list {
+  border: 2px gray solid;
+  /* width: 100px;
+  height: 100px; */
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  display: inline-block;
+}
+
+.inside {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.list img {
+  width: 100%;
+  height: 100%;
+}
+
+.select {
+  border: 5px solid Red;
+  transition: 0.7s;
+}
+
+.list-contains {
+  width: 100%;
+  height: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.deactive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.top {
+  cursor: not-allowed;
+}
+
+.prop-images {
+  position: absolute;
+
+  padding: 0px;
+}
+
+.list-name {
+  word-wrap: break-word;
+}
+/* #sku_box li div {
+  cursor: not-allowed;
+} */
+
+#sku_box button {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  color: #333;
+  float: left;
+  line-height: 22px;
+  margin: 2px 5px 2px 0;
+  padding: 1px 5px;
+  text-decoration: none;
+  width: inherit;
+}
+
+#sku_box li div {
+  float: left;
+}
+
+
+#sku_box li {
+  display: inline;
+}
+#sku_box button.on,
+#sku_box button.on:hover {
+  border: 3px solid rgb(255, 30, 0);
+  color: rgb(255, 30, 0);
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  line-height: 22px;
+}
+
+#sku_box button:hover {
+  border: 1px solid #f90;
+  color: #f90;
+}
+#sku_box th {
+  width: 80px;
+}
+
+#sku_box button.no_stock {
+  border: 1px dashed #d6d6d8;
+  color: #cdcdcd;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+#sku_box li .dis {
+  cursor: not-allowed;
+}
+
+/* 
+.tb-selected a,
+.tb-selected a:hover {
+  padding: 2px 5px;
+  color: #f40;
+  border: 2px solid #f40;
+  background: #fff;
+} */
