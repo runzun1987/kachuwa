@@ -1,0 +1,64 @@
+type Keyword @model {
+  id: ID!
+  keywordCount: Int!
+  searchedKeyword: String!
+  productBluePrint: productsBluePrint
+}
+
+type productsBluePrint {
+  page: Int!
+  products: [Product]
+  totalProducts: Int!
+}
+
+type Product {
+  id: ID!
+  name: String!
+  price: Float!
+  pictures: [String!]
+  smPictures: [String!]
+  shortDesc: String!
+  detail_url: String!
+  category: String!
+  brands: [String!]
+  top: String!
+  rating: Int!
+  reviews: Int!
+  stock: Int!
+  totalProducts: Int!
+  page: Int!
+  searchedKeyword: String!
+}
+
+type Order @model {
+  id: ID!
+  cartList: [ProductInfo]
+  date: String!
+  status: String!
+  firstName: String!
+  lastName: String!
+  country: String!
+  street: String!
+  town: String!
+  phone: String!
+  email: String!
+  note: String
+  total: Int!
+}
+
+type ProductInfo {
+
+  totalPrice:Int!
+  bigImageUrl: String!
+  smallImages: [String!]
+  title: String!
+  price: String!
+  stock: Int!
+  description: String!
+  qty: String!
+  sum: Float!
+  skus: String!
+  SkuId: String!
+  skus_json: String!
+  
+}
